@@ -42,7 +42,7 @@
         <Icon style="font-size: 5em" icon="akar-icons:linkedin-fill" />
         <p>linkedin</p>
     </div></a>
-    <a class="zero" on:click={()=>discordText="chrisch#8900"} href="discord:://discordapp.com/users/125228190825316352"><div class="single">
+    <a class="zero" on:mouseenter={()=>discordText="chrisch#8900"} href="discord"><div class="single">
         <Icon style="font-size: 5em" icon="akar-icons:discord-fill" />
         <p>{discordText}</p>
     </div></a>
