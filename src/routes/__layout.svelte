@@ -43,7 +43,7 @@
 
         <footer>
             <p>chrisch {dt.getFullYear()}</p>
-            <p>Made with love in Athens</p>
+            <p>Made in Athens</p>
         </footer>
     </div>
 </div>
