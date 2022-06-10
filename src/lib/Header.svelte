@@ -34,4 +34,12 @@
             width: 85vw;
         }
     }
+    @media (prefers-color-scheme: dark) {
+        header {
+            background-color: rgba(0,0,0,0.8);
+        }
+        .wrapper {
+            border-color: white;
+        }
+    }
 </style>

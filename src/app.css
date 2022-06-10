@@ -45,3 +45,25 @@ main {
         width: 85vw;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .zero {
+        color: white;
+    }
+    .zero:visited {
+        color: white;
+    }
+    a {
+        color: #03DAC5;
+    }
+    a:visited {
+        color: #03DAC5;
+    }
+    * {
+        color: white;
+    }
+    body {
+        background-color: #121212;
+    }
+}
+  
