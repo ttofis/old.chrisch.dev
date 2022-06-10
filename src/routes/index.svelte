@@ -5,6 +5,12 @@
     import Icon from '@iconify/svelte';
 </script>
 
+<svelte:head>
+    <title>chrisch</title>
+    <meta name="og:title" content="chrisch" />
+    <meta name="twitter:title" content="chrisch" />
+</svelte:head>
+
 <h1>Welcome to chrisch.dev</h1>
 <div class="imgContainer">
     <img alt="Chris Charalambous" src="me.png">

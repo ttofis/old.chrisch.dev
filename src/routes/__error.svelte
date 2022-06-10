@@ -13,6 +13,12 @@
     export let title;
 </script>
 
+<svelte:head>
+    <title>{title} - chrisch</title>
+    <meta name="og:title" content="chrisch" />
+    <meta name="twitter:title" content="chrisch" />
+</svelte:head>
+
 <h1>{title}</h1>
 <p>Something went wrong!</p>
 
