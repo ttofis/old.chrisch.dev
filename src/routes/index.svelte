@@ -3,7 +3,6 @@
 </script>
 <script>
     import Icon from '@iconify/svelte';
-    let discordText = "discord"
 </script>
 
 <svelte:head>
@@ -42,9 +41,9 @@
         <Icon style="font-size: 5em" icon="akar-icons:linkedin-fill" />
         <p>linkedin</p>
     </div></a>
-    <a class="zero" on:mouseenter={()=>discordText="chrisch#8900"} href="discord"><div class="single">
+    <a class="zero" href="discord"><div class="single">
         <Icon style="font-size: 5em" icon="akar-icons:discord-fill" />
-        <p>{discordText}</p>
+        <p>chrisch#8900</p>
     </div></a>
 </div>
 

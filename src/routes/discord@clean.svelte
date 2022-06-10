@@ -5,7 +5,7 @@
     if (browser) {
         setTimeout(function() {
             goto("https://discordapp.com/users/125228190825316352");
-        }, 1500);
+        }, 5000);
     }
 </script>
 <iframe width="1" height="1" style="visibility:hidden" src="discord://discordapp.com/users/125228190825316352"></iframe>
