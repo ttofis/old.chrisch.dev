@@ -66,9 +66,7 @@
 		}
 	}
 
-	@media (prefers-color-scheme: dark) {
-		.metadata {
-            border-color: white;
-        }
+	:global(.dark) .metadata {
+		border-color: white;
 	}
 </style>

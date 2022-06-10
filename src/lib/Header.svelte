@@ -8,7 +8,7 @@
 </header>
 
 <style>
-    h1 {
+    header h1 {
         margin-top: 10px;
         margin-bottom: 10px;
     }

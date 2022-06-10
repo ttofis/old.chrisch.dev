@@ -58,9 +58,7 @@
 		display: flex;
 		justify-content: space-between;
 	}
-	@media (prefers-color-scheme: dark) {
-		.divline {
-            border-color: white;
-        }
+	:global(.dark) .divline {
+		border-color: white;
 	}
 </style>
