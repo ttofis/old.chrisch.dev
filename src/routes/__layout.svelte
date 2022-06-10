@@ -1,6 +1,7 @@
 <script>
     import '../app.css';
     import DarkMode from "svelte-dark-mode";
+    import Icon from '@iconify/svelte';
 
     let switchTheme;
     let theme;
@@ -24,7 +25,14 @@
         <div class="wrapper">
             <div class="content">
                 <h1><a class="zero" href="/">chrisch</a></h1>
-                <h2><a class="zero" href="/projects">projects</a> - <a class="zero" href="/posts">posts</a> - <a href="" on:click={() => theme = switchTheme}>{theme}</a></h2>
+                <h2><a class="zero" href="/projects">projects</a> - <a class="zero" href="/posts">posts</a> 
+                    <a class="zero" href="" on:click={() => theme = switchTheme}>
+                        {#if theme == "dark"}
+                        <Icon style="margin-left: 10px; font-size: 1em" icon="akar-icons:sun-fill" />
+                        {:else}
+                        <Icon style="margin-left: 10px; font-size: 1em" icon="akar-icons:moon-fill" />
+                        {/if}
+                    </a></h2>
             </div>
         </div>
     </header>

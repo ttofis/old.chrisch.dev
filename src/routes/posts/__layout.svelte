@@ -19,8 +19,8 @@
 </script>
 
 <script>
-    import "@fontsource/source-code-pro"
-    import "../../nightowl.css"
+    import "@fontsource/source-code-pro";
+    import "../../nightowl.css";
 
 	export let post;
 
