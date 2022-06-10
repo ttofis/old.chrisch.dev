@@ -37,7 +37,7 @@ I used [fontsource](https://fontsource.org/) instead of traditional methods to l
 Command to install a font
 
 ```
-npm add Lato
+npm add @fontsource/lato
 ```
 
 In the script section of my svelte file
@@ -50,4 +50,19 @@ And then directly into my css file
 
 ```css
 font-family: "Lato"
+```
+
+### iconify
+
+I used [iconify](https://iconify.design/) for all icons and logos.
+
+
+In the script section of my svelte file
+```js
+import Icon from '@iconify/svelte';
+```
+
+and then, any icon I want from their [icon sets](https://icon-sets.iconify.design/), directly as a svelte component
+```jsx
+<Icon icon="akar-icons:sun-fill" />
 ```
