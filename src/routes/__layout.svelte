@@ -1,6 +1,8 @@
 <script>
     import Header from '$lib/Header.svelte'
     import '../app.css';
+
+    let dt = new Date();
 </script>
 
 <svelte:head>
@@ -17,7 +19,7 @@
     </main>
 
     <footer>
-        <p>chrisch 2022</p>
+        <p>chrisch {dt.getFullYear()}</p>
         <p>Made with love in Athens</p>
     </footer>
 </div>

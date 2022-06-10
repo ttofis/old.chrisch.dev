@@ -11,7 +11,6 @@
     <meta name="twitter:title" content="chrisch" />
 </svelte:head>
 
-<h1>Welcome to chrisch.dev</h1>
 <div class="imgContainer">
     <img alt="Chris Charalambous" src="me.png">
 </div>
@@ -68,6 +67,9 @@
         padding: 10px;
         width: auto;
         text-align: center;
+    }
+    p {
+        font-size: 1.1em;
     }
     @media only screen and (max-width: 600px) {
         img {
