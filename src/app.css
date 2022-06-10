@@ -54,10 +54,10 @@ main {
         color: white;
     }
     a {
-        color: #03DAC5;
+        color: #03da9d;
     }
     a:visited {
-        color: #03DAC5;
+        color: #03da9d;
     }
     * {
         color: white;
@@ -66,4 +66,3 @@ main {
         background-color: #121212;
     }
 }
-  
