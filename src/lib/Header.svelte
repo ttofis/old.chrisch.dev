@@ -20,6 +20,11 @@
         -webkit-backdrop-filter: saturate(180%) blur(20px);
         text-align: center;
     }
+    @-moz-document url-prefix() {
+        header {
+            background-color: rgb(255,255,255);
+        }
+    }
     .wrapper {
         width: 60vw;
         margin: 0 auto;
@@ -41,6 +46,11 @@
         }
         .wrapper {
             border-color: white;
+        }
+        @-moz-document url-prefix() {
+            header {
+                background-color: rgb(18,18,18);
+            }
         }
     }
 </style>
