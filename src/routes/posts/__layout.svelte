@@ -46,7 +46,7 @@
 		margin: 0;
 	}
 	.metadata {
-		border-bottom: 2px solid #fff;
+		border-bottom: 2px solid #222;
 		display: flex;
 		justify-content: space-between;
 	}
@@ -55,4 +55,10 @@
     :global(pre[class*="language-"] *)  {
         font-family: "Source Code Pro", Consolas,  monospace;
     }
+
+	@media (prefers-color-scheme: dark) {
+		.metadata {
+            border-color: white;
+        }
+	}
 </style>
