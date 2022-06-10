@@ -7,11 +7,13 @@ published: true
 
 Hello and welcome to my new website!
 
+![home page of website](/screenshot.png "website")
+
 I built this website using [Sveltekit](https://kit.svelte.dev/) using [mdsvex](https://mdsvex.pngwn.io/) for Markdown processing.
 
 It was suprisingly difficult to get post listing to work and metadata extract to work automatically, but I managed to do it with help from [sveltekit-mdvsex-blog](https://github.com/mvasigh/sveltekit-mdsvex-blog).
 
-You can find the source code on my [github repository](https://github.com/ttofis/chrisch.dev).
+You can find the source code in my [github repository](https://github.com/ttofis/chrisch.dev).
 
 ## Some neat stuff I've used to create this website
 ### Frosted Glass

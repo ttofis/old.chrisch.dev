@@ -56,6 +56,16 @@
         font-family: "Source Code Pro", Consolas,  monospace;
     }
 
+	:global(p img) {
+		width: 60vw;
+	}
+
+	@media only screen and (max-width: 600px) {
+		:global(p img) {
+			width: 85vw;
+		}
+	}
+
 	@media (prefers-color-scheme: dark) {
 		.metadata {
             border-color: white;
