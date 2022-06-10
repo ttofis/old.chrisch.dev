@@ -29,6 +29,7 @@
         display: flex;
         justify-content: space-between;
         border-top: 2px solid #222;
+        margin-top: auto;
     }
     @media (prefers-color-scheme: dark) {
         footer {
