@@ -20,7 +20,7 @@
     <meta name="og:description" content="Personal website of Chris Charalambous" />
 </svelte:head>
 
-<div class={theme}>
+<body class={theme}>
     <header>
         <div class="wrapper">
             <div class="content">
@@ -46,7 +46,7 @@
             <p>Made in Athens</p>
         </footer>
     </div>
-</div>
+</body>
 
 <style>
     header h1 {
