@@ -25,7 +25,7 @@
     {:else}
         <style>
             body {
-                background-color: #121212;
+                background-color: white;
             }
         </style>
     {/if}
