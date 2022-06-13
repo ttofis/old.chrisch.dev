@@ -12,15 +12,22 @@
     }
 </script>
 
-<DarkMode bind:theme />
-
 <svelte:head>
 	<meta name="description" content="Personal website of Chris Charalambous" />
     <meta name="twitter:description" content="Personal website of Chris Charalambous" />
     <meta name="og:description" content="Personal website of Chris Charalambous" />
+    {#if theme==="dark"}
+        <style>
+            body {
+                background-color: #121212;
+            }
+        </style>
+    {/if}
 </svelte:head>
 
-<body class={theme}>
+<DarkMode bind:theme />
+
+<div class={theme}>
     <header>
         <div class="wrapper">
             <div class="content">
@@ -46,7 +53,7 @@
             <p>Made in Athens</p>
         </footer>
     </div>
-</body>
+</div>
 
 <style>
     header h1 {

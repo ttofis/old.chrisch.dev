@@ -41,7 +41,7 @@ body {
     margin: 0;
     width: 100vw;
     overflow-x: hidden;
-    color: white;
+    background-color: white;
 }
 
 main {
@@ -68,7 +68,4 @@ main {
 }
 .dark * {
     color: white;
-}
-.dark {
-    background-color: #121212;
 }
