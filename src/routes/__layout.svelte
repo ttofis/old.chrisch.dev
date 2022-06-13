@@ -22,6 +22,12 @@
                 background-color: #121212;
             }
         </style>
+    {:else}
+        <style>
+            body {
+                background-color: #121212;
+            }
+        </style>
     {/if}
 </svelte:head>
 
