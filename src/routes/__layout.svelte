@@ -18,13 +18,13 @@
     <meta name="og:description" content="Personal website of Chris Charalambous" />
     {#if theme==="dark"}
         <style>
-            body {
+            :root {
                 background-color: #121212;
             }
         </style>
     {:else}
         <style>
-            body {
+            :root {
                 background-color: white;
             }
         </style>
@@ -38,14 +38,7 @@
         <div class="wrapper">
             <div class="content">
                 <h1><a class="zero" href="/">chrisch</a></h1>
-                <h2><a class="zero" href="/projects">projects</a> - <a class="zero" href="/posts">posts</a> 
-                    <a class="zero" href="" on:click={() => theme = switchTheme}>
-                        {#if theme == "dark"}
-                        <Icon style="margin-left: 10px; font-size: 1em" icon="akar-icons:sun-fill" />
-                        {:else}
-                        <Icon style="margin-left: 10px; font-size: 1em" icon="akar-icons:moon-fill" />
-                        {/if}
-                    </a></h2>
+                <h2><a class="zero" href="/projects">projects</a> - <a class="zero" href="/posts">posts</a></h2>
             </div>
         </div>
     </header>
@@ -56,7 +49,14 @@
 
         <footer>
             <p>chrisch {dt.getFullYear()}</p>
-            <p>Made in Athens</p>
+            <h3>
+            <a class="zero" href="javascript:void(0);" on:click={() => theme = switchTheme}>
+                {#if theme == "dark"}
+                <Icon style="margin-left: 10px; font-size: 1em" icon="akar-icons:sun-fill" />
+                {:else}
+                <Icon style="margin-left: 10px; font-size: 1em" icon="akar-icons:moon-fill" />
+                {/if}
+            </a></h3>
         </footer>
     </div>
 </div>
