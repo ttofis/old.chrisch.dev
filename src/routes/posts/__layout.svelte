@@ -47,7 +47,7 @@
 		margin: 0;
 	}
 	.metadata {
-		border-bottom: 2px solid #222;
+		border-bottom: 2px solid var(--borderColor);
 		display: flex;
 		justify-content: space-between;
 	}
@@ -65,9 +65,5 @@
 		:global(p img) {
 			width: 85vw;
 		}
-	}
-
-	:global(.dark) .metadata {
-		border-color: white;
 	}
 </style>

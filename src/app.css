@@ -2,6 +2,7 @@
 
 * {
     font-family: "Lato", sans-serif;
+    color: var(--textColor);
 }
 
 h1 {
@@ -9,21 +10,21 @@ h1 {
 }
 
 a {
-    color: blue;
+    color: var(--linkColor);
     text-decoration: none;
 }
 
 a:visited {
-    color: blue;
+    color: var(--linkColor);
     text-decoration: none;
 }
 
 .zero {
-    color: black;
+    color: var(--textColor);
     text-decoration: none;
 }
 .zero:visited {
-    color: black;
+    color: var(--textColor);
 }
 
 .align {
@@ -51,20 +52,4 @@ main {
     .align {
         width: 85vw;
     }
-}
-
-.dark .zero {
-    color: white;
-}
-.dark .zero:visited {
-    color: white;
-}
-.dark a {
-    color: #03da9d;
-}
-.dark a:visited {
-    color: #03da9d;
-}
-.dark * {
-    color: white;
 }

@@ -43,7 +43,7 @@
 	.divline {
 		margin: 0 auto;
 		width: 80%;
-		border-bottom: 2px solid #222;
+		border-bottom: 2px solid var(--borderColor);
 	}
 	.post {
 		margin-top: 10px;
@@ -58,8 +58,5 @@
 	.metadata {
 		display: flex;
 		justify-content: space-between;
-	}
-	:global(.dark) .divline {
-		border-color: white;
 	}
 </style>

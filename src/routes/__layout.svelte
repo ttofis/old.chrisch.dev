@@ -2,6 +2,7 @@
     import '../app.css';
     import DarkMode from "svelte-dark-mode";
     import Icon from '@iconify/svelte';
+    import Header from '$lib/Header.svelte';
 
     let switchTheme;
     let theme;
@@ -19,13 +20,24 @@
     {#if theme==="dark"}
         <style>
             :root {
+                --headerColor: rgba(18,18,18,0.8);
+                --ffHeaderColor: #121212;
+                --linkColor: #03da9d;
+                --textColor: white;
+                --borderColor: white;
                 background-color: #121212;
             }
         </style>
     {:else}
         <style>
             :root {
+                --headerColor: rgba(255,255,255,0.8);
+                --ffHeaderColor: white;
+                --linkColor: blue;
+                --textColor: black;
+                --borderColor: #222;
                 background-color: white;
+                
             }
         </style>
     {/if}
@@ -33,15 +45,8 @@
 
 <DarkMode bind:theme />
 
-<div class={theme}>
-    <header>
-        <div class="wrapper">
-            <div class="content">
-                <h1><a class="zero" href="/">chrisch</a></h1>
-                <h2><a class="zero" href="/projects">projects</a> - <a class="zero" href="/posts">posts</a></h2>
-            </div>
-        </div>
-    </header>
+<div>
+    <Header />
     <div class="align">
         <main>
             <slot />
@@ -62,56 +67,10 @@
 </div>
 
 <style>
-    header h1 {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    header {
-        position: fixed;
-        width: 100vw;
-        background-color: rgba(255,255,255,0.8);
-        backdrop-filter: saturate(180%) blur(20px);
-        -webkit-backdrop-filter: saturate(180%) blur(20px);
-        text-align: center;
-    }
-    @-moz-document url-prefix() {
-        header {
-            background-color: rgb(255,255,255);
-        }
-    }
-    .wrapper {
-        width: 60vw;
-        margin: 0 auto;
-        border-bottom: 2px solid #222;
-    }
-    .content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    @media only screen and (max-width: 600px) {
-        .wrapper {
-            width: 85vw;
-        }
-    }
-    .dark header {
-        background-color: rgba(18,18,18,0.8);
-    }
-    .dark .wrapper {
-        border-color: white;
-    }
-    @-moz-document url-prefix() {
-        .dark header {
-            background-color: rgb(18,18,18);
-        }
-    }
     footer {
         display: flex;
         justify-content: space-between;
-        border-top: 2px solid #222;
+        border-top: 2px solid var(--borderColor);
         margin-top: auto;
-    }
-    .dark footer {
-        border-color: white;
     }
 </style>

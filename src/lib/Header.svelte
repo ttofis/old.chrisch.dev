@@ -15,20 +15,20 @@
     header {
         position: fixed;
         width: 100vw;
-        background-color: rgba(255,255,255,0.8);
+        background-color: var(--headerColor);
         backdrop-filter: saturate(180%) blur(20px);
         -webkit-backdrop-filter: saturate(180%) blur(20px);
         text-align: center;
     }
     @-moz-document url-prefix() {
         header {
-            background-color: rgb(255,255,255);
+            background-color: var(--ffHeaderColor);
         }
     }
     .wrapper {
         width: 60vw;
         margin: 0 auto;
-        border-bottom: 2px solid #222;
+        border-bottom: 2px solid var(--borderColor);
     }
     .content {
         display: flex;
@@ -38,19 +38,6 @@
     @media only screen and (max-width: 600px) {
         .wrapper {
             width: 85vw;
-        }
-    }
-    @media (prefers-color-scheme: dark) {
-        header {
-            background-color: rgba(18,18,18,0.8);
-        }
-        .wrapper {
-            border-color: white;
-        }
-        @-moz-document url-prefix() {
-            header {
-                background-color: rgb(18,18,18);
-            }
         }
     }
 </style>
