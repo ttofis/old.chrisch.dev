@@ -69,6 +69,7 @@
     footer {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         border-top: 2px solid var(--borderColor);
         margin-top: auto;
     }
