@@ -40,4 +40,7 @@
             width: 85vw;
         }
     }
+    header h2 {
+        font-size: min(1.5em, 6vw);
+    }
 </style>
