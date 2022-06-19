@@ -12,37 +12,39 @@
 </svelte:head>
 
 <h1>Projects</h1>
-<p>Here are most of my finished projects</p>
-
 <div class="list">
     <div class="item">
-        <h2>chrisch.dev</h2>
+        <div class="head">
+            <h2>chrisch.dev</h2>
+            <h2 class="icons">
+                <a href="/posts/firstpost"><Icon icon="akar-icons:info-fill" /></a>
+                <a href="/"><Icon class="icon" icon="akar-icons:link-chain" /></a>
+                <a href="https://github.com/ttofis/chrisch.dev"><Icon class="icon" icon="akar-icons:github-fill" /></a>
+            </h2>
+        </div>
         <div class="inner">
             <img src="/projects/chrisch.dev.png" alt="Crosswordle game" />
             <div class="flexy">
                 <p>The site you're currently viewing.</p>
                 <div class="bottom">
                     <p><b>Technologies used: </b>Node, Svelte, Sveltekit, Netlify</p>
-                    <div class="icons">
-                        <a href="/posts/firstpost"><Icon icon="akar-icons:info-fill" /></a>
-                        <a href="/"><Icon class="icon" icon="akar-icons:link-chain" /></a>
-                        <a href="https://github.com/ttofis/chrisch.dev"><Icon class="icon" icon="akar-icons:github-fill" /></a>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="item">
-        <h2>Crosswordle</h2>
+        <div class="head">
+            <h2>Crosswordle</h2>
+            <h2 class="icons">
+                <a href="https://crosswordle.chrisch.dev"><Icon class="icon" icon="akar-icons:link-chain" /></a>
+            </h2>
+        </div>
         <div class="inner">
             <img src="/projects/crosswordle.png" alt="Crosswordle game" />
             <div class="flexy">
                 <p>A wordle inspired game crossword twist!</p>
                 <div class="bottom">
                     <p><b>Technologies used: </b>Node, Svelte, Netlify</p>
-                    <div class="icons">
-                        <a href="https://crosswordle.chrisch.dev"><Icon class="icon" icon="akar-icons:link-chain" /></a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -53,6 +55,7 @@
     .flexy {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         width: 100%;
     }
     .inner {
@@ -60,6 +63,10 @@
         display: flex;
         justify-content: space-between;
         flex-direction: row-reverse;
+        column-gap: 10px; /* That's neat! */
+    }
+    .flexy p {
+        margin-top: 10px;
     }
     .item img {
         margin-top: 10px;
@@ -81,22 +88,24 @@
         padding: 0;
     }
     .item {
-        margin-bottom: 30px;
+        margin-top: 20px;
+        margin-bottom: 10px;
         /*border: 2px var(--borderColor) solid;
         padding: 10px;*/
         width: auto;
         border-radius: 10px;
     }
-    .icons {
-        font-size: 2em;
-    }
     .item h2 {
+        margin: 0;
+        /*font-size: min(5vw, 1.5em);*/
+    }
+    .item .bottom p {
+        margin: 0;
+    }
+    .head {
         width: 100%;
         border-bottom: 2px var(--borderColor) solid;
-        margin: 0;
-        font-size: min(5vw, 1.5em);
-    }
-    .item .bottom {
-        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
     }
 </style>
