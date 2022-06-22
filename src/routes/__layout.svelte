@@ -7,9 +7,11 @@
     let switchTheme;
     let theme;
     let dt = new Date();
+    let bgColor;
     
     $: {
         switchTheme = theme === "dark" ? "light" : "dark";
+        bgColor = theme === "dark" ? "#121212" : "#FFFFFF";
     }
 </script>
 
@@ -17,6 +19,7 @@
 	<meta name="description" content="Personal website of Chris Charalambous" />
     <meta name="twitter:description" content="Personal website of Chris Charalambous" />
     <meta name="og:description" content="Personal website of Chris Charalambous" />
+    <meta name="theme-color" content={bgColor}>
 </svelte:head>
 
 <DarkMode bind:theme />
