@@ -61,4 +61,7 @@ main {
     .align {
         width: 85vw;
     }
+    .mobile-hide {
+        display: none;
+    }
 }

@@ -57,9 +57,9 @@
             <!-- svelte-ignore a11y-invalid-attribute -->
             <a class="zero" href="javascript:void(0);" on:click={() => theme = switchTheme}>
                 {#if theme == "dark"}
-                <Icon style="margin-left: 10px; font-size: 1em" icon="akar-icons:sun-fill" />
+                <Icon style="margin-left: 10px; font-size: 1em" icon="akar-icons:sun-fill" inline="true"/>
                 {:else}
-                <Icon style="margin-left: 10px; font-size: 1em" icon="akar-icons:moon-fill" />
+                <Icon style="margin-left: 10px; font-size: 1em" icon="akar-icons:moon-fill" inline="true"/>
                 {/if}
             </a></h3>
         </footer>
