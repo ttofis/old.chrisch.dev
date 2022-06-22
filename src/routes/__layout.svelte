@@ -54,6 +54,7 @@
         <footer>
             <p>chrisch {dt.getFullYear()}</p>
             <h3>
+            <!-- svelte-ignore a11y-invalid-attribute -->
             <a class="zero" href="javascript:void(0);" on:click={() => theme = switchTheme}>
                 {#if theme == "dark"}
                 <Icon style="margin-left: 10px; font-size: 1em" icon="akar-icons:sun-fill" />

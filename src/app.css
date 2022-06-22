@@ -5,6 +5,15 @@
     color: var(--textColor);
 }
 
+:root::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 h1 {
     margin-top: 0;
 }
