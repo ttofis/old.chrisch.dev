@@ -1,6 +1,3 @@
-<script context="module">
-    export const prerender = true;
-</script>
 <script>
     import Icon from '@iconify/svelte';
 </script>
@@ -32,10 +29,6 @@
     <a class="zero" href="https://github.com/ttofis"><div class="single">
         <Icon style="font-size: 5em" icon="akar-icons:github-fill" />
         <p>github</p>
-    </div></a>
-    <a class="zero" href="https://twitter.com/elchris414"><div class="single">
-        <Icon style="font-size: 5em" icon="akar-icons:twitter-fill" />
-        <p>twitter</p>
     </div></a>
     <a class="zero" href="https://linkedin.com/in/chrischaralambous14/"><div class="single">
         <Icon style="font-size: 5em" icon="akar-icons:linkedin-fill" />

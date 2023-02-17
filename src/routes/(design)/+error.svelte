@@ -1,25 +1,14 @@
 <script context="module">
-    /** @type {import('@sveltejs/kit').Load} */
-    export function load({ error, status }) {
-        return {
-        props: {
-            title: `${status}`
-        }
-        };
-    }
-</script>
-
-<script>
-    export let title;
+    import { page } from '$app/stores';
 </script>
 
 <svelte:head>
-    <title>{title} - chrisch</title>
+    <title>{$page.status} - chrisch</title>
     <meta name="og:title" content="chrisch" />
     <meta name="twitter:title" content="chrisch" />
 </svelte:head>
 
-<h1>{title}</h1>
+<h1>{$page.status}</h1>
 <p>Something went wrong!</p>
 
 <style>

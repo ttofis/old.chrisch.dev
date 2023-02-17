@@ -1,4 +1,5 @@
 ---
+id: test
 title: Test
 description: Testing my new system
 date: 2022-06-10
