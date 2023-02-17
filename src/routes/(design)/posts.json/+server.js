@@ -1,16 +1,15 @@
 import { slugFromPath } from '$lib/util';
 
 /** @type {import('@sveltejs/kit').RequestHandler} */
-export async function get({ url }) {
+export async function GET({ url }) {
 	const modules = import.meta.glob('./*.{md,svx,svelte.md}');
+	console.log(import.meta.glob("./*"));
 
 	const postPromises = [];
 	const limit = Number(url.searchParams.get('limit') ?? Infinity);
 
 	if (Number.isNaN(limit)) {
-		return {
-			status: 400
-		};
+		return new Response(undefined, { status: 400 });
 	}
 
 	for (let [path, resolver] of Object.entries(modules)) {
@@ -28,7 +27,5 @@ export async function get({ url }) {
 
 	publishedPosts.sort((a, b) => (new Date(a.date) > new Date(b.date) ? -1 : 1));
 
-	return {
-		body: publishedPosts.slice(0, limit)
-	};
+	return new Response(JSON.stringify(publishedPosts.slice(0, limit)));
 }

@@ -1,5 +1,5 @@
 <script>
-    import '../app.css';
+    import '../../app.css';
 </script>
 
 <div class="clean" style="text-align: center">

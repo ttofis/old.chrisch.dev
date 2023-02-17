@@ -1,5 +1,5 @@
 <script>
-    import '../app.css';
+    import '../../app.css';
     import DarkMode from "svelte-dark-mode";
     import Icon from '@iconify/svelte';
     import Header from '$lib/Header.svelte';

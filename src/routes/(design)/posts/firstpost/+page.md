@@ -1,4 +1,5 @@
 ---
+id: firstpost
 title: First post
 description: First post in my new website
 date: 2022-06-10
