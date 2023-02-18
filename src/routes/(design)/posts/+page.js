@@ -5,7 +5,6 @@ export async function load() {
 
 	for (let [path, resolver] of Object.entries(modules)) {
 		let id = path.split('/')[1];
-		console.log(id);
 		const promise = resolver().then((post) => ({
 			id,
 			...post.metadata
