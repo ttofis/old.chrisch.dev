@@ -9,7 +9,11 @@
 </svelte:head>
 
 <div class="imgContainer">
-    <img alt="Chris Charalambous" src="me.png">
+    <picture alt="Chris Charalambous">
+        <source type="image/avif" srcset="me.avif">  
+        <source type="image/webp" srcset="me.webp"> 
+        <img alt="Chris Charalambous" src="me.png" /> 
+    </picture>
 </div>
 <div class="text">
     <p>Hello! My name is Chris Charalambous.</p>
