@@ -1,10 +1,16 @@
 <script>
+	import { error } from '@sveltejs/kit';
     import "@fontsource/source-code-pro";
     import "../../../../nightowl.css";
 
 	export let title;
 	export let date;
 	export let description;
+	export let published;
+
+	if (!published) {
+		throw error(404);
+	}
 
 	let dt = new Date(date);
 </script>
@@ -38,12 +44,12 @@
         font-family: "Source Code Pro", Consolas,  monospace;
     }
 
-	:global(p img) {
+	:global(.blogImg) {
 		width: 60vw;
 	}
 
 	@media only screen and (max-width: 600px) {
-		:global(p img) {
+		:global(.blogImg) {
 			width: 85vw;
 		}
 	}

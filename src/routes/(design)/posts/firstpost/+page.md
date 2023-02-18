@@ -1,5 +1,4 @@
 ---
-id: firstpost
 title: First post
 description: First post in my new website
 date: 2022-06-10
@@ -8,7 +7,12 @@ published: true
 
 Hello and welcome to my new website!
 
-![home page of website](/screenshot.png "website")
+<picture>
+    <source type="image/avif" srcset="/screenshot.avif">  
+    <source type="image/webp" srcset="/screenshot.webp">
+    <source srcset="/screenshot.png">
+    <img class="blogImg" alt="home page of website" src="/screenshot.png" /> 
+</picture>
 
 I built this website using [Sveltekit](https://kit.svelte.dev/) using [mdsvex](https://mdsvex.pngwn.io/) for Markdown processing.
 

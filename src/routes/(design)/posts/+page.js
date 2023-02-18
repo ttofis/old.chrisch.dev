@@ -1,11 +1,13 @@
-/** @type {import('./$types').PageServerLoad} */
 export async function load() {
     const modules = import.meta.glob('./*/*.{md,svx,svelte.md}');
 
 	const postPromises = [];
 
 	for (let [path, resolver] of Object.entries(modules)) {
+		let id = path.split('/')[1];
+		console.log(id);
 		const promise = resolver().then((post) => ({
+			id,
 			...post.metadata
 		}));
 
