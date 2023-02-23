@@ -6,7 +6,6 @@
 <svelte:head>
     <title>Projects - chrisch</title>
     <meta name="og:title" content="Projects - chrisch" />
-    <meta name="twitter:title" content="Projects - chrisch" />
 </svelte:head>
 
 <div class="header">

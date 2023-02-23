@@ -5,7 +5,6 @@
 <svelte:head>
     <title>chrisch</title>
     <meta name="og:title" content="chrisch" />
-    <meta name="twitter:title" content="chrisch" />
 </svelte:head>
 
 <div class="imgContainer">

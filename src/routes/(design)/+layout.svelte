@@ -13,7 +13,6 @@
 
 <svelte:head>
 	<meta name="description" content="Personal website of Chris Charalambous" />
-    <meta name="twitter:description" content="Personal website of Chris Charalambous" />
     <meta name="og:description" content="Personal website of Chris Charalambous" />
     <meta name="theme-color" content={bgColor}>
 </svelte:head>

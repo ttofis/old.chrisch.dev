@@ -18,7 +18,6 @@
 <svelte:head>
     <title>{title} - chrisch</title>
     <meta name="og:title" content={title} />
-    <meta name="twitter:title" content={title} />
 </svelte:head>
 
 <h1 class="title">{title}</h1>
