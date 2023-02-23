@@ -1,17 +1,13 @@
 <script>
     import '../../app.css';
-    import DarkMode from "svelte-dark-mode";
-    import Icon from '@iconify/svelte';
     import Header from '$lib/Header.svelte';
+    import Footer from '$lib/Footer.svelte';
+    import { theme } from "$lib/theme";
 
-    let switchTheme;
-    let theme;
-    let dt = new Date();
-    let bgColor;
+    let bgColor = $theme === "dark" ? "#121212" : "#FFFFFF";
     
     $: {
-        switchTheme = theme === "dark" ? "light" : "dark";
-        bgColor = theme === "dark" ? "#121212" : "#FFFFFF";
+        bgColor = $theme === "dark" ? "#121212" : "#FFFFFF";
     }
 </script>
 
@@ -22,8 +18,7 @@
     <meta name="theme-color" content={bgColor}>
 </svelte:head>
 
-<DarkMode bind:theme />
-{#if theme==="dark"}
+{#if $theme==="dark"}
     <style>
         :root {
             --headerColor: rgba(18,18,18,0.8);
@@ -54,27 +49,7 @@
             <slot />
         </main>
 
-        <footer>
-            <p>chrisch {dt.getFullYear()}</p>
-            <h3>
-            <!-- svelte-ignore a11y-invalid-attribute -->
-            <a class="zero" href="javascript:void(0);" on:click={() => theme = switchTheme}>
-                {#if theme == "dark"}
-                <Icon style="margin-left: 10px; font-size: 1em" icon="akar-icons:sun-fill" inline="true"/>
-                {:else}
-                <Icon style="margin-left: 10px; font-size: 1em" icon="akar-icons:moon-fill" inline="true"/>
-                {/if}
-            </a></h3>
-        </footer>
+        <Footer />
     </div>
 </div>
 
-<style>
-    footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-top: 2px solid var(--borderColor);
-        margin-top: auto;
-    }
-</style>

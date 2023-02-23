@@ -2,22 +2,21 @@
   "name": "chrisch.dev",
   "version": "0.0.1",
   "scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "vite preview",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
-		"lint": "prettier --plugin-search-dir . --check .",
-		"format": "prettier --plugin-search-dir . --write ."
-	},
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
+    "lint": "prettier --plugin-search-dir . --check .",
+    "format": "prettier --plugin-search-dir . --write ."
+  },
   "devDependencies": {
     "@iconify/svelte": "^2.2.1",
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/adapter-netlify": "^1.0.0-next.64",
     "@sveltejs/kit": "next",
     "mdsvex": "^0.10.5",
-    "svelte": "^3.44.0",
-    "svelte-dark-mode": "^2.1.0"
+    "svelte": "^3.44.0"
   },
   "type": "module",
   "dependencies": {
