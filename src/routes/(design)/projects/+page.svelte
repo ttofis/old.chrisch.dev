@@ -33,7 +33,11 @@
             </h2>
         </div>
         <div class="inner">
-            <img src="/projects/chrisch.dev.png" alt="Crosswordle game" />
+            <picture class="projectPic">
+                <source type="image/avif" srcset="/projects/chrisch.dev.avif">  
+                <source type="image/webp" srcset="/projects/chrisch.dev.webp"> 
+                <img class="projectImg" alt="Crosswordle game" src="/projects/chrisch.dev.png" /> 
+            </picture>
             <div class="flexy">
                 <p>The site you're currently viewing.
                 <hide>
@@ -56,7 +60,11 @@
             </h2>
         </div>
         <div class="inner">
-            <img src="/projects/crosswordle.png" alt="Crosswordle game" />
+            <picture class="projectPic">
+                <source type="image/avif" srcset="/projects/crosswordle.avif">  
+                <source type="image/webp" srcset="/projects/crosswordle.webp"> 
+                <img class="projectImg" src="/projects/crosswordle.png" alt="Crosswordle game" />
+            </picture>
             <div class="flexy">
                 <p>A wordle inspired game crossword twist!
                 <hide>
@@ -129,14 +137,14 @@
     .flexy p {
         margin-top: 10px;
     }
-    .item img {
+    .projectImg {
         margin-top: 10px;
-        width: 60%;
+        width: 100%;
         aspect-ratio: 0;
         box-sizing: border-box;
         border: 2px solid var(--borderColor);
     }
-    .grid .item img {
+    .projectPic {
         width: 100%;
     }
     .grid .inner {
@@ -161,9 +169,6 @@
     @media only screen and (max-width: 600px) {
         .inner {
             flex-direction: column;
-        }
-        .item img {
-            width: 100%;
         }
         .grid .divline {
             display: block;
