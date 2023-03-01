@@ -8,9 +8,8 @@ published: true
 Hello and welcome to my new website!
 
 <picture>
-    <source type="image/avif" srcset="/screenshot.avif">  
+    <!--<source type="image/avif" srcset="/screenshot.avif">  -->
     <source type="image/webp" srcset="/screenshot.webp">
-    <source srcset="/screenshot.png">
     <img class="blogImg" alt="home page of website" src="/screenshot.png" /> 
 </picture>
 

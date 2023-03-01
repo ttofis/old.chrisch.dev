@@ -9,7 +9,7 @@
 
 <div class="imgContainer">
     <picture>
-        <source type="image/avif" srcset="me.avif">  
+        <!--<source type="image/avif" srcset="me.avif">-->
         <source type="image/webp" srcset="me.webp"> 
         <img alt="Chris Charalambous" src="me.png" /> 
     </picture>

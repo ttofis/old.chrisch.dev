@@ -33,7 +33,7 @@
         </div>
         <div class="inner">
             <picture class="projectPic">
-                <source type="image/avif" srcset="/projects/chrisch.dev.avif">  
+                <!--<source type="image/avif" srcset="/projects/chrisch.dev.avif">-->
                 <source type="image/webp" srcset="/projects/chrisch.dev.webp"> 
                 <img class="projectImg" alt="Crosswordle game" src="/projects/chrisch.dev.png" /> 
             </picture>
@@ -60,7 +60,7 @@
         </div>
         <div class="inner">
             <picture class="projectPic">
-                <source type="image/avif" srcset="/projects/crosswordle.avif">  
+                <!--<source type="image/avif" srcset="/projects/crosswordle.avif">-->
                 <source type="image/webp" srcset="/projects/crosswordle.webp"> 
                 <img class="projectImg" src="/projects/crosswordle.png" alt="Crosswordle game" />
             </picture>
