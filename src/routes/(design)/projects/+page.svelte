@@ -70,7 +70,6 @@
                     <br><br>Using wordle's fun word searching idea, you solve a crossword build out of multiple sized words.
                     <br>Currently has limited puzzles, with the ability to switch through them with by applying a #(0-4) at the end of the url.
                     <br>I also made a Puzzle Creator helper to make puzzle creation much easier.
-                    <br><br>Source code coming soon
                 </hide></p>
                 <div class="bottom">
                     <p><b>Technologies used: </b>Node, Svelte, Netlify</p>
@@ -78,7 +77,33 @@
             </div>
         </div>
     </div>
-    
+    <div class="divline" />
+    <div class="item">
+        <div class="head">
+            <h2>Elective Sorter</h2>
+            <h2 class="icons">
+                <a href="https://elective-sorter.chrisch.dev"><Icon class="icon" icon="akar-icons:link-chain" /></a>
+                <a href="https://github.com/ttofis/elective-sorter"><Icon class="icon" icon="akar-icons:github-fill" /></a>
+            </h2>
+        </div>
+        <div class="inner">
+            <picture class="projectPic">
+                <source type="image/webp" srcset="/projects/elective-sorter.webp"> 
+                <img class="projectImg" src="/projects/elective-sorter.png" alt="elective-sorter game" />
+            </picture>
+            <div class="flexy">
+                <p>A helper tool to sort the elective lessons in order of preference.
+                <hide>
+                    <br><br>Designed for the Medicine Degree of the <a href="https://en.uoa.gr/">NKUA</a>, this tool helps the difficult decision of the order of preference for their elective lesson.
+                    <br>It utilizes Pairwise Comparisons to make simple, managable decisions and is equiped with an algorithm to reduce the amount of needed comparisons.
+                    <br>Project is written in Greek.
+                </hide></p>
+                <div class="bottom">
+                    <p><b>Technologies used: </b>Node, Svelte, Sveltekit, Tailwind, Netlify</p>
+                </div>
+            </div>
+        </div>
+    </div>    
 </div>
 
 <style>
