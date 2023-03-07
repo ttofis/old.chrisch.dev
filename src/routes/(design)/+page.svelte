@@ -19,8 +19,9 @@
     <p>I'm currently studying <a href="https://www.ece.ntua.gr/en">Electrical & Computer Engineering</a> at the <a href="https://ntua.gr/en/">National Technical University of Athens</a>.</p>
     <p>I've started programming at a young age and I've learned a decent level:</p>
     <ul>
-        <li>Golang, Python, C++, Javascript, HTML, CSS</li>
-        <li>Svelte</li>
+        <li>Golang, Python, C++, Javascript, Typescript, HTML, CSS</li>
+        <li>Tailwind</li>
+        <li>Svelte, Sveltekit</li>
         <li>Netlify, Firebase</li>
     </ul>
 </div>
