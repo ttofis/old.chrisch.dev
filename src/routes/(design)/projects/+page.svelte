@@ -53,6 +53,34 @@
     <div class="divline" />
     <div class="item">
         <div class="head">
+            <h2>Todo</h2>
+            <h2 class="icons">
+                <a href="https://todo.chrisch.dev"><Icon class="icon" icon="akar-icons:link-chain" /></a>
+                <a href="https://github.com/ttofis/todo"><Icon class="icon" icon="akar-icons:github-fill" /></a>
+            </h2>
+        </div>
+        <div class="inner">
+            <picture class="projectPic">
+                <!--<source type="image/avif" srcset="/projects/crosswordle.avif">-->
+                <source type="image/webp" srcset="/projects/todo.webp"> 
+                <img class="projectImg" src="/projects/todo.png" alt="Todo app" />
+            </picture>
+            <div class="flexy">
+                <p>A simple Todo app
+                <hide>
+                    <br><br>Todo is a simple, relatively good looking Todo app.
+                    <br>Made with the focus of learning Firebase (initially Pocketbase) and Tailwind.
+                    <br>Features realtime updates between devices, PWA-like download, Google login.
+                </hide></p>
+                <div class="bottom">
+                    <p><b>Technologies used: </b>Firebase, Svelte, Netlify, Tailwind, Node</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divline" />
+    <div class="item">
+        <div class="head">
             <h2>Crosswordle</h2>
             <h2 class="icons">
                 <a href="https://crosswordle.chrisch.dev"><Icon class="icon" icon="akar-icons:link-chain" /></a>
