@@ -13,7 +13,13 @@ export async function load() {
 		postPromises.push(promise);
 	}
 
-	const posts = await Promise.all(postPromises);
+	let posts = [];
+
+	try {
+		posts = await Promise.all(postPromises);
+	}catch {
+		posts = [];
+	}
     const publishedPosts = posts.filter((post) => post.published);
 
 	publishedPosts.sort((a, b) => (new Date(a.date) > new Date(b.date) ? -1 : 1));
