@@ -24,6 +24,32 @@
 <div class="list" class:grid={status == "gridView"}>
     <div class="item">
         <div class="head">
+            <h2>SeatSignal</h2>
+            <h2 class="icons">
+                <a href="https://seatsignal.com"><Icon class="icon" icon="akar-icons:link-chain" /></a>
+            </h2>
+        </div>
+        <div class="inner">
+            <picture class="projectPic">
+                <!--<source type="image/avif" srcset="/projects/chrisch.dev.avif">-->
+                <source type="image/webp" srcset="/projects/seatsignal.webp"> 
+                <img class="projectImg" alt="SeatSignal" src="/projects/seatsignal.png" /> 
+            </picture>
+            <div class="flexy">
+                <p>A lesson tracking website for <a href="https://www.asu.edu/">ASU</a>
+                <hide>
+                    <br><br>SeatSignal is a project that aims to help students catch seats in the classes they want.
+                    <br>Students purchase slots that last for the whole semester and set the lessons that they want to be notified about.
+                    <br>It has a bot that checks the lessons that they want every minute and notifies them via SMS and Email when seats have been found.
+                </hide></p>
+                <div class="bottom">
+                    <p><b>Technologies used: </b>Sveltekit, Netlify, Golang, Tailwind, Stripe, Amazon SES, Amazon SNS, Fly.io, Edge Functions</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="head">
             <h2>chrisch.dev</h2>
             <h2 class="icons">
                 <a href="/posts/firstpost"><Icon icon="akar-icons:info-fill" /></a>
