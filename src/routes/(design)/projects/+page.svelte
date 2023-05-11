@@ -61,7 +61,7 @@
             <picture class="projectPic">
                 <!--<source type="image/avif" srcset="/projects/chrisch.dev.avif">-->
                 <source type="image/webp" srcset="/projects/chrisch.dev.webp"> 
-                <img class="projectImg" alt="Crosswordle game" src="/projects/chrisch.dev.png" /> 
+                <img class="projectImg" alt="This site" src="/projects/chrisch.dev.png" /> 
             </picture>
             <div class="flexy">
                 <p>The site you're currently viewing.
