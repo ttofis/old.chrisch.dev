@@ -43,7 +43,7 @@
                     <br>It has a bot that checks the lessons that they want every minute and notifies them via SMS and Email when seats have been found.
                 </hide></p>
                 <div class="bottom">
-                    <p><b>Technologies used: </b>Sveltekit, Netlify, Golang, Tailwind, Stripe, Amazon SES, Amazon SNS, Fly.io, Edge Functions</p>
+                    <p><b>Technologies used: </b>Sveltekit, Netlify, Planetscale, Firebase, Golang, Stripe, Amazon SES, Amazon SNS, Fly.io, Edge Functions, Tailwind</p>
                 </div>
             </div>
         </div>
