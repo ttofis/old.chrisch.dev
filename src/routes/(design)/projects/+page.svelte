@@ -48,6 +48,7 @@
             </div>
         </div>
     </div>
+    <div class="divline" />
     <div class="item">
         <div class="head">
             <h2>chrisch.dev</h2>
